@@ -6,14 +6,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoController {
 
-    @GetMapping(path = "/ping")
+    @GetMapping(path = "/pong")
     public String ping() {
-        return "pong";
+        return "ping";
     }
 
-    @GetMapping(path = "/pong")
+    @GetMapping(path = "/ping")
     public String pong() {
-        return "ping";
+        return "pong";
     }
 
 }
